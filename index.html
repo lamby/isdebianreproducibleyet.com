@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- https://github.com/lamby/isdebianreproducibleyet.com -->
+
+  <meta charset="utf-8" />
+  <title>Is Debian reproducible yet?</title>
+
+  <meta name="twitter:site" content="@lolamby">
+  <meta name="twitter:creator" content="@lolamby">
+  <meta name="twitter:title" content="Is Debian reproducible yet?">
+  <meta name="twitter:description" content="What's the current status of Reproducible Builds in Debian?">
+  <meta name="twitter:card" content="summary">
+
+  <meta property="og:site_name" content="Is Debian reproducible yet?" />
+  <meta property="og:description" content="What's the current status of Reproducible Builds in Debian?" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://isdebianreproducibleyet.com" />
+  <meta property="og:title" content="Is Debian reproducible yet?" />
+
+  <meta property="og:image" content="http://isdebianreproducibleyet.com/hexagonal.png" />
+  <meta property="og:image:width" content="209" />
+  <meta property="og:image:height" content="209" />
+
+  <style type="text/css">
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      text-align: center;
+      margin: 0;
+    }
+
+    .answer {
+      display: inline-block;
+      margin-top: 180px;
+      font-weight: bold;
+      font-family: Arial, sans-serif;
+    }
+
+    .answer a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .answer .big {
+      font-size: 120pt;
+    }
+
+    .links {
+      color: #777;
+      position: fixed;
+      bottom: 0;
+      width: 300px;
+      font-size: 10pt;
+      padding: 0 5px 10px 10px;
+      z-index: 9999;
+    }
+
+    .links a {
+      color: inherit;
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .links.left {
+      left: 0;
+      text-align: left;
+    }
+
+    .links.center {
+      left: 50%;
+      right: 50%;
+      margin-left: -150px;
+    }
+
+    .links.right {
+      right: 0;
+      text-align: right;
+    }
+  </style>
+</head
+
+<body>
+  <div class="answer">
+    <a
+      class="big"
+      href="https://tests.reproducible-builds.org/debian/reproducible.html"
+    >NO</a>
+    <br>
+    <a
+      href="https://tests.reproducible-builds.org/debian/reproducible.html"
+      >&hellip; but <em>buster</em> on amd64 is 93.2% reproducible right now!
+    </a>
+  </div>
+
+  <div class="links left">
+    <a href="https://twitter.com/ReproBuilds" target="_blank">@ReproBuilds</a>
+  </div>
+
+  <div class="links center">
+    <a href="https://reproducible-builds.org/" target="_blank">What are Reproducible Builds?</a>
+  </div>
+
+  <div class="links right">
+    by <a href="https://twitter.com/lolamby" target="_blank">@lolamby</a>
+  </div>
+</body>
+</html>
