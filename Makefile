@@ -10,3 +10,4 @@ all:
 	git add index.html
 	-git commit -m "Update current status to $(CURRENT)%."
 	git push
+	-echo https://github.com/lamby/isdebianreproducibleyet.com/commit/$(shell git rev-parse HEAD)
