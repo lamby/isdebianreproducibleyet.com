@@ -1,7 +1,7 @@
 #!/usr/bin/env Make
 
 CURRENT := $(shell curl -qs https://tests.reproducible-builds.org/debian/reproducible.html | \
-		sed -n '/bullseye\/amd64/{n;p}' | \
+		sed -n '/bookworm\/amd64/{n;p}' | \
 		head -n1 | \
 		sed -ne 's@</td><td>[0-9]* / \([^%]*\)%.*@\1@gp')
 
