@@ -6,6 +6,7 @@ CURRENT := $(shell curl -qs https://tests.reproducible-builds.org/debian/reprodu
 		sed -ne 's@</td><td>[0-9]* / \([^%]*\)%.*@\1@gp')
 
 all:
+	test -n "$(CURRENT)"
 	sed -i -e "s@is .* reproducible@is $(CURRENT)% reproducible@g" index.html
 	git add index.html
 	-git commit -m "Update current status to $(CURRENT)%."
