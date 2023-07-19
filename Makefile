@@ -1,6 +1,6 @@
 #!/usr/bin/env Make
 
-TESTING = bookworm
+TESTING = trixie
 
 CURRENT := $(shell curl -qs https://tests.reproducible-builds.org/debian/reproducible.html | \
 		sed -n '/${TESTING}\/amd64/{n;p}' | \
