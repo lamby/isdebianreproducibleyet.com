@@ -1,6 +1,6 @@
 #!/usr/bin/env Make
 
-TESTING = trixie
+TESTING = forky
 
 CURRENT := $(shell curl -qs https://tests.reproducible-builds.org/debian/reproducible.html | \
 		sed -n '/${TESTING}\/amd64/{n;p}' | \
